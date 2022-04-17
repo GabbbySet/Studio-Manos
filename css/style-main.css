@@ -20,6 +20,14 @@ body{
             justify-content: flex-end;
 }
 
+.container-tab{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .container-2{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -275,6 +283,7 @@ body{
 #info-panel{
     background-color: #5e1d1d;
     color: whitesmoke;
+    padding: 2em 0;
 }
 
 /*
@@ -287,41 +296,74 @@ Scrollbar Properties (Alzheimers)
 ::-webkit-scrollbar-thumb:hover
 */
 
-.about{
-    display: -webkit-box;
-    display: -ms-flexbox;
+/* INFO TABS */
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+    border-left: 2px solid #f5f5f5;
+    padding-left: 1.5em;
+    max-width: fit-content;
+    min-height: 10.2em;
+    margin: 1.5em 0;
+}
+
+.tabs {
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 510px;
-    min-width: 700px;
+    justify-content: flex-start;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.about #studio{
-    margin-left: 25px;
+.tab{
+    cursor: pointer;
+    text-align: center;
+    font-size: 23px;
+    padding: .4em;
+    padding-left: .6em;
+    padding-right: .6em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-self: center;
+    color: #f5f5f5;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
-.about #region .region-text, .about #studio .studio-text{
-    flex-wrap: wrap;
-    max-height: 300px;
-    overflow: auto;
-    padding-right: 20px;
+.tab.active{
+    border-bottom: 2px solid #f5f5f5;
+    /*background-color: #f5f5f53a;
+    color: #f5f5f5;*/
 }
 
-/* INFO-PANEL SCROLL BARS */
-.about #region ::-webkit-scrollbar, .about #studio ::-webkit-scrollbar{
-    background: #4b1818;
-    border-radius: 10px;
-    width: 5px;
+.tab-h:hover{
+    background-color: #f5f5f53f;
 }
 
-.about #region ::-webkit-scrollbar-thumb, .about #studio ::-webkit-scrollbar-thumb{
-    background-color: #f5f5f541;
-    border-radius: 10px;
+#gal-link {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f5f5f5;
+    align-self: center;
+    border-radius: 8px;
+    padding: .4em;
 }
 
-/* ENDS HERE */
+#gal-link:hover{
+    background-color: #f5f5f5;
+    color: #4b1818;
+}
+/*---------*/
+
+.about{
+    width: 46%;
+}
 
 #info-panel #card-panel{
     display: -webkit-box;
@@ -425,253 +467,6 @@ Scrollbar Properties (Alzheimers)
     list-style-image: url('../images/market_icon_25x25.png');
 }
 
-.gallery-cont{
-    color: #f5f5f5;
-    background-color: #5e1d1d;
-    justify-self: center;
-    padding: 70px 0;
-}
-
-.gallery-cont h1{
-    margin-bottom: 90px;
-}
-
-.gallery{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-            min-width: 900px;
-}
-
-.gallery .popup-window{
-    position: fixed;
-    display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #0000007e;
-}
-
-.gallery #popup-content{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    background-color: #f5f5f5;
-    -webkit-filter: drop-shadow(0 0 6px #181818);
-            filter: drop-shadow(0 0 6px #181818);
-    color: #000000;
-    border-radius: 10px;
-    padding: 25px;
-    padding-top: 0;
-}
-
-.next-prev-cont{
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    top: 35%;
-    left: -7.5%;
-    width: 115%;
-    height: 30%;
-}
-
-#close-msg{
-    color: #f5f5f5;
-    filter: drop-shadow(0 0 2px #18181866);
-    text-align: center;
-    line-height: 95%;
-    font-size: 400%;
-    opacity: 1;
-    pointer-events: none;
-    transition: 1.4s;
-}
-
-.next-prev-cont button{
-    width: 70px;
-    height: 70px;
-    background-color: #f5f5f5;
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 50%;
-    -webkit-filter: drop-shadow(0 0 2px #333333);
-            filter: drop-shadow(0 0 2px #333333);
-    opacity: 0.4;
-    cursor: pointer;
-}
-
-.next-prev-cont button:hover{
-    opacity: 0.6;
-}
-
-#prev{
-    background-image: url('../images/prev_30x30.png');
-    background-position: 45% center;
-}
-
-#next{
-    background-image: url('../images/next_30x30.png');
-    background-position: 55% center;
-}
-
-#close-popup{
-    width: 20px;
-    height: 20px;
-    margin: 10px 0;
-    background-color: #f5f5f5;
-    background-repeat: none;
-    background-image: url('../images/close_20x20.png');
-    border: none;
-}
-
-#close-popup:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-.gallery #popup-content img{
-    border: #5e1d1d 5px double;
-}
-
-.gallery #thumbnail{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 75%;
-}
-
-.gallery #thumbnail button{
-    width: 150px;
-    height: 100px;
-    cursor: pointer;
-    margin: 2px;
-    background-color: #5e1d1d;
-    border: #d3afaf 3px solid;
-    border-radius: 10px;
-    background-position: center center;
-    background-size: 100%;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.gallery #thumbnail button div{
-    background-image: url('../images/zoom_glass_30x30.png');
-    -webkit-filter: drop-shadow(0 0 3px #252525);
-            filter: drop-shadow(0 0 3px #252525);
-    width: 30px;
-    height: 30px;
-    background-position: center center;
-    background-size: 100%;
-    opacity: 0;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
-
-/*Gallery Images*/
-.gallery #thumbnail #img-1{
-    background-image: url('../images/gallery_images/74552971.jpg');
-}
-.gallery #thumbnail #img-2{
-    background-image: url('../images/gallery_images/74553298.jpg');
-}
-.gallery #thumbnail #img-3{
-    background-image: url('../images/gallery_images/74015003.jpg');
-}
-.gallery #thumbnail #img-4{
-    background-image: url('../images/gallery_images/74015150.jpg');
-}
-.gallery #thumbnail #img-5{
-    background-image: url('../images/gallery_images/74550260.jpg');
-}
-.gallery #thumbnail #img-6{
-    background-image: url('../images/gallery_images/48272405.jpg');
-}
-.gallery #thumbnail #img-7{
-    background-image: url('../images/gallery_images/74551996.jpg');
-}
-.gallery #thumbnail #img-8{
-    background-image: url('../images/gallery_images/48230736.jpg');
-}
-.gallery #thumbnail #img-9{
-    background-image: url('../images/gallery_images/74551564.jpg');
-}
-.gallery #thumbnail #img-10{
-    background-image: url('../images/gallery_images/74011785.jpg');
-}
-.gallery #thumbnail #img-11{
-    background-image: url('../images/gallery_images/48207257.jpg');
-}
-.gallery #thumbnail #img-12{
-    background-image: url('../images/gallery_images/48255462.jpg');
-}
-.gallery #thumbnail #img-13{
-    background-image: url('../images/gallery_images/48273858.jpg');
-}
-.gallery #thumbnail #img-14{
-    background-image: url('../images/gallery_images/74011284.jpg');
-}
-.gallery #thumbnail #img-15{
-    background-image: url('../images/gallery_images/48277345.jpg');
-}
-
-.gallery #thumbnail button:hover{
-    border-color: #441919;
-    background-size: 110%;
-    -webkit-filter: drop-shadow(0 0 3px #1a1a1a);
-            filter: drop-shadow(0 0 3px #1a1a1a);
-}
-
-.gallery #thumbnail button:hover div{
-    opacity: 1;
-}
-
 #map-panel{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -729,6 +524,27 @@ Scrollbar Properties (Alzheimers)
     list-style-image: url('../images/phone2_icon_15x15.png');
 }
 
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/*
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221);
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #949494;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+}
+
 /* Responsiveness */
 @media (max-width: 300px){
     #main-header .container-1 #title a{
@@ -761,76 +577,31 @@ Scrollbar Properties (Alzheimers)
     }
 }
 
-@media (max-width: 1300px){
-
-    .gallery #thumbnail{
-        grid-template-columns: 150px 150px 150px 150px 150px 150px;
-        grid-template-rows: 100px 100px 100px;
-    }
-
-    .gallery #popup-content{
-        height: 550px;
-        width: 700px;
-        padding-left: 35px;
-    }
-
-    .gallery #popup-content #close-popup{
-        background-image: url('../images/close_15x15.png');
-        background-repeat: no-repeat;
-        margin-bottom: 5px;
-    }
-
-    .gallery #popup-content img{
-        height: 550px;
-        width: 700px;
-    }
-
-    .next-prev-cont button{
-        width: 50px;
-        height: 50px;
-    }
-}
-
 @media (max-width: 950px){
     #map-panel iframe{
         width: 90%;
         margin-bottom: 10%;
     }
-
-    .gallery #thumbnail{
-        grid-template-columns: 150px 150px 150px 150px 150px;
-        grid-template-rows: 100px 100px 100px;
-    }
-}
-
-@media (max-width: 900px){
-    #close-msg{
-        font-size: 300%;
+    .about{
+        width: 80%;
     }
 }
 
 @media (max-width: 750px){
     .about{
-        min-width: 0;
+        min-width: 90%;
+    }
+    #showcase p{
+        font-size: 70px;
     }
 }
 
-@media (max-width: 640px){
-    .gallery #thumbnail{
-        grid-template-columns: 150px 150px 150px;
-        grid-template-rows: 100px 100px 100px;
+@media (max-width: 676px){
+    .tab{
+        font-size: 17px;
     }
-    .gallery .popup-window #popup-content{
-        width: 67%;
-        height: 35%;
-    }
-    .gallery .popup-window #popup-content img{
-        align-self: center;
-        height: 80%;
-        width: 100%;
-    }
-    #close-msg{
-        font-size: 200%;
+    #gal-link{
+        font-size: 17px;
     }
 }
 
@@ -839,34 +610,15 @@ Scrollbar Properties (Alzheimers)
         width: 90%;
         margin-bottom: 10%;
     }
-    .gallery .popup-window #popup-content{
-        width: 67%;
-        height: 35%;
-    }
-    .gallery .popup-window #popup-content img{
-        align-self: center;
-        height: 80%;
-        width: 100%;
-    }
-    #close-msg{
-        font-size: 300%;
+
+    #showcase p{
+        font-size: 60px;
     }
 }
 
 @media (max-width: 450px){
     #showcase .container-2 #main-title{
         font-size: 40px;
-    }
-    .gallery #thumbnail{
-        grid-template-columns: 150px;
-        grid-template-rows: auto;
-    }
-    .gallery #thumbnail button{
-        justify-self: center;
-        width: 200%;
-    }
-    #close-msg{
-        font-size: 200%;
     }
 }
 
@@ -876,20 +628,6 @@ Scrollbar Properties (Alzheimers)
     }
     #main-header .container-1 #title .location{
         font-size: 12px;
-    }
-    .gallery .popup-window #popup-content{
-        align-content: center;
-        justify-content: center;
-        width: 67%;
-        height: 30%;
-        padding-left: 9%;
-    }
-    .gallery .popup-window #popup-content img{
-        height: 100%;
-        width: 100%;
-    }
-    #close-msg{
-        font-size: 100%;
     }
 }
 
@@ -923,65 +661,18 @@ Scrollbar Properties (Alzheimers)
 
 @media (max-width: 1640px){
     .about{
-        width: 110%;
-        height: 10%;
+        min-width: 60%;
     }
+}
 
-    .gallery{
-        min-width: 0;
+@media (max-width: 1200px){
+    .about{
+        min-width: 80%;
     }
 }
 
 @media (orientation: portrait){
-
-    .about{
-        flex-direction: column;
-        margin: 0 25px;
-    }
-
-    .about #studio{
-        margin-left: 0px;
-    }
-
-    .about #region .region-text, .about #studio .studio-text{
-        max-height: 300px;
-        overflow: auto;
-    }
-
     #card-panel{
         flex-direction: column;
-    }
-    
-    .gallery{
-        min-width: 0;
-    }
-
-    .gallery #popup-content{
-        height: 400px;
-        width: 500px;
-    }
-
-    .gallery #popup-content #close-popup{
-        background-image: url('../images/close_15x15.png');
-        background-repeat: no-repeat;
-        margin-bottom: 5px;
-    }
-
-    .gallery #popup-content img{
-        height: 400px;
-        width: 500px;
-    }
-
-    .next-prev-cont button{
-        width: 35px;
-        height: 35px;
-    }
-
-    #prev{
-        background-image: url('../images/prev_20x20.png');
-    }
-    
-    #next{
-        background-image: url('../images/next_20x20.png');
     }
 }

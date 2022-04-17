@@ -4,10 +4,11 @@ const language_data = {
 
         "main_title": "Welcome to Chios<br>Welcome to Manos",
 
-        "region_title": "Megas Limionas",
-        "region_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minima dignissimos accusantium dolorum consectetur recusandae ullam itaque tempora in suscipit culpa assumenda, eius sapiente ab ea doloribus hic vel similique ad velit doloremque vero saepe illum? Ut magni nostrum rem eos, delectus perferendis voluptates porro earum unde eius tempore, ex repudiandae corrupti veritatis placeat reprehenderit ducimus dolores! Sit tenetur dolore magni quisquam magnam sunt mollitia ipsa, nobis assumenda iusto, libero, eius reiciendis vitae quod cumque. Saepe ullam dolores placeat blanditiis.",
-
-        "studio_text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae exercitationem consectetur vel suscipit odit ullam delectus?",
+        "chios_title": "Chios",
+        "region_title": "Manos Studios",
+        "gal_title": "Photos",
+        "chios_text": "Chios is the second largest island in the north Aegean. It is situated near the geographical center, south of Lesvos Island. It covers an 822 Sq. Km. area and has a coastal perimeter of about 500 miles. The highest mountainous terrain is Pelinaion (1170 m). Chios has frequent boat connections from Piraeus, Salonika and other islands as well as Turkey. Every moment of the year Chios is ready to provide holidays to fulfill the dreams of every visitor. The main attraction that Chios has to offer is the unbounded natural beauty of its coastline, antique vilages and magnificent beaches. The warm crystal clear waters make Chios well known as a place for ideal living. Chios combines local tradition with modern life and offers unforgettable experiences to thousands of visitors.",
+        "region_text": "Just 150 meters away from the beach of Megas Limionas, overlooking the endless blue of the Agean Sea. Manos Studios are located in a quiet and family like enviroment that will amaze you. Manos Studios is a small tourist accommodation, offering fully equipped apartments (capacity of 12 beds), with individual verandas, outdoor spaces, BBQ and an amazing garden with mastic trees and roses. The distance from the center of Chios town and the port is 7km, from the airport about 5km and only 100m from our accommodation there are restaurants, minimarkets and other shops.",
 
         "card1_title": "Facilities",
         "wifi": "Free WiFi internet",
@@ -33,10 +34,8 @@ const language_data = {
         "bus": "Bus stop",
         "market": "Mini market",
 
-        "gal_title": "Gallery",
-        "close_msg": "Double click to close",
-
-        "contact_title": "Contact us:"
+        "contact_title": "Contact us:",
+        "close_btn_txt": "Close"
     },
 
     "greek":{
@@ -44,10 +43,11 @@ const language_data = {
 
         "main_title": "Καλωσήρθατε στη Χίο<br>Καλωσορίσατε στο Manos",
 
-        "region_title": "Μέγας Λιμιώνας",
-        "region_text": "Τα καρότα Lorem ipsum βελτίωσαν τις εκπτώσεις. Σαν, ως εκ τούτου, οι καιροί είναι στο ελάχιστο άξιο να κατηγορούν ότι λαμβάνει το λάθος οποιουδήποτε θλίψης, ο διαμαρτυρόμενος γίνεται δεκτός ταυτόχρονα, κάτι παρόμοιο έχει τις επιθυμίες της που είναι σοφός σε αυτό ή σε πόνο, συχνά δεν από είναι, οι πόνοι του; Για να είναι το σπουδαίο πράγμα από εμάς, Και για τις ευχαρίστησεις τους, και έτσι, επιλέχθηκε για τη διαρκή του χρόνου, καταδικάζουμε, από τους πόνους που μπορεί να ευχαριστήσει την αποκήρυξη της αλήθειας από αυτούς που αντιμετωπίζουν διεφθαρμένα! Ας υπάρξει ένας μεγάλος άντρας με μεγάλο πόνο, δεν είναι αρκετά ρευστοί, είναι υποχρεωμένη, για εμάς να πάρουμε αμέσως το καλό, την ελευθερία, απορρίπτοντας κάποια από τη ζωή τι είναι και πότε. Συχνά, κάθε πόνος για να την ευχαριστήσει με κολακευτικό. Ο σοφός ήρθε τη στιγμή που τίποτα δεν μισούται χωρίς κανένα λόγο.",
-        
-        "studio_text": "Lorem ipsum dolor sit amet consectetur, εκπτώσεις. Επιλέχθηκε για την άσκηση οποιασδήποτε μίσους Repudiandae consectetur vel suscipit, το λάθος της κολακευτικής της να μεταφέρει μηνύματα, τον εγκαταλείπουν, πράγματι;",
+        "chios_title": "Χίος",
+        "region_title": "Στούντιο Μάνος",
+        "gal_title": "Φωτογραφίες",
+        "chios_text": "Η Χίος είναι το δεύτερο σε μέγεθος νησί του Βορείου Αιγαίου. Βρίσκεται κοντά στο γεωγραφικό κέντρο της περιοχής, νότια της Λέσβου. Καλύπτει 822 τ. χλμ. έκτασης και η παράκτια περίμετρος της είναι περίπου 500 μίλια. Το μεγαλύτερο σε υψόμετρο βουνό είναι το Πελινναίον (1170 μ.). Η Χίος συνδέεται ακτοπλοϊκώς με τον Πειραιά, τη Θεσσαλονίκη και άλλα νησιά καθώς και την Τουρκία. Κάθε εποχή του χρόνου η Χίος έχει τη δυνατότητα να προσφέρει ονειρεμένες διακοπές για κάθε επισκέπτη. Τα κύρια αξιοθέατα που έχει να προφέρει η Χίος είναι η απεριόριστη φυσική ομορφιά της ακτογραμμής της, τα παραδοσιακά χωριά και οι υπέροχες παραλίες της. Τα ζεστά κρυστάλλινα νερά έχουν κάνει τη Χίο να φημίζεται σαν ένας ιδανικός τόπος για να ζήσει κανείς. Σήμερα αυτο το υπέροχο νησί, που συνδιάζει αρμονικά την παράδοση και τον μοντέρνο τρόπο ζωής, προσφέρει αξέχαστες εμπειρίες σε χιλιάδες επισκέπτες.",
+        "region_text": "Μόλις 150 μέτρα από την παραλία του Μέγα Λιμιώνα με θέα το απέραντο γαλάζιο του Αιγαίου βρίσκεται το κατάλυμά μας. Σε ένα ήσυχο και οικογενειακό περιβάλλον που θα σας εντυπωσιάσει. Το Manos Studios είναι ένα μικρό τουριστικό κατάλυμα πλήρως εξοπλισμένων διαμερισμάτων δυναμικότητας 12 κλινών, με ατομικές βεράντες εξωτερικούς χώρους, BBQ και έναν εκπληκτικό κήπο με μαστιχόδεντρα και τριανταφυλλιές. Η απόσταση από το κέντρο της Χίου και το λιμάνι είναι 7km, από το αεροδρόμιο 5km και σε μικρή απόσταση, 100m υπάρχουν εστιατόρια, minimarket και άλλα καταστήματα.",
 
         "card1_title": "Παροχές",
         "wifi": "Δωρεάν ασύρματο ίντερνετ",
@@ -73,10 +73,8 @@ const language_data = {
         "bus": "Στάση λεωφορείου",
         "market": "Μίνι μάρκετ",
 
-        "gal_title": "Συλλογή",
-        "close_msg": "Διπλό κλικ για κλήσιμο",
-
-        "contact_title": "Επικοινωνία:"
+        "contact_title": "Επικοινωνία:",
+        "close_btn_txt": "Κλείσιμο"
     }
 }
 
@@ -95,9 +93,11 @@ const langButton = document.querySelector('.lang-btn');
 const locationEl = document.querySelector('.location');
 const mainTitleEl = document.querySelector('#main-title');
 //paragraphs
-const regionTitleEl = document.querySelector('.region-title');
-const regionTextEl = document.querySelector('.region-text');
-const studioTextEl = document.querySelector('.studio-text');
+const chiosTitleEl = document.querySelector('#title-chios');
+const regionTitleEl = document.querySelector('#title-region');
+const galTitleEl = document.querySelector('#gal-link');
+const chiosTextEl = document.querySelector('#chios');
+const regionTextEl = document.querySelector('#megas-limionas');
 //cards
 const card1TitleEl = document.querySelector('.card1-title');
 const card2TitleEl = document.querySelector('.card2-title');
@@ -120,9 +120,9 @@ const beachEl = document.querySelector('#beach');
 const restaurantEl = document.querySelector('#restaurant');
 const busEl = document.querySelector('#bus');
 const marketEl = document.querySelector('#market');
-const galTitleEl = document.querySelector('.gal-title');
 const contactTitleEl = document.querySelector('.contact-title');
-const close_pop_msg = document.getElementById('close-msg');
+//close gallery button
+
 
 //Translation Function
 function translateLanguage(lang_data, attribute){
@@ -130,9 +130,11 @@ function translateLanguage(lang_data, attribute){
     locationEl.textContent = lang_data[attribute].location;
     mainTitleEl.innerHTML = lang_data[attribute].main_title;
     //paragraphs
+    chiosTitleEl.textContent = lang_data[attribute].chios_title;
     regionTitleEl.textContent = lang_data[attribute].region_title;
+    galTitleEl.textContent = lang_data[attribute].gal_title;
+    chiosTextEl.textContent = lang_data[attribute].chios_text;
     regionTextEl.textContent = lang_data[attribute].region_text;
-    studioTextEl.textContent = lang_data[attribute].studio_text;
     //cards
     card1TitleEl.textContent = lang_data[attribute].card1_title;
     card2TitleEl.textContent = lang_data[attribute].card2_title;
@@ -155,27 +157,26 @@ function translateLanguage(lang_data, attribute){
     restaurantEl.textContent = lang_data[attribute].restaurant;
     busEl.textContent = lang_data[attribute].bus;
     marketEl.textContent = lang_data[attribute].market;
-    //close pop-up wingow message while in image viewer -> text
-    close_pop_msg.textContent = lang_data[attribute].close_msg;
-    //gallery title
-    galTitleEl.textContent = lang_data[attribute].gal_title;
     //contact title
     contactTitleEl.textContent = lang_data[attribute].contact_title;
 }
 
 //Set english as the default language
-translateLanguage(language_data, 'english');
+document.cookie = 'english';
+var langAttr = 'english';
+translateLanguage(language_data, langAttr);
 
 //adding the event listeners and translating
 links.forEach(el => {
     el.addEventListener('mousedown', () => {
-        const langAttr = el.getAttribute('language');
-
+        langAttr = el.getAttribute('language');
         //changing the language icon
         if (langAttr == 'english'){
+            document.cookie = 'english';
             langButton.style.backgroundImage = lang_eng_img;
             langButton.style.backgroundPosition = 'center center';
         }else {
+            document.cookie = 'greek';
             langButton.style.backgroundImage = lang_gr_img;
             langButton.style.backgroundPosition = 'left center';
         }
@@ -184,132 +185,16 @@ links.forEach(el => {
     });
 });
 
+/* Unused Clamp Function */
+/*
 function clamp(num, bottom){
     return num < bottom? bottom : num;
 }
-
-const start_opacity = 0.9;    //starting opacity of 'Douple tap to close' message
-
-function fadeOutEffect() {
-    var fadeTarget = document.getElementById("close-msg");
-    var fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-            fadeTarget.style.opacity = start_opacity;
-        }
-        if (fadeTarget.style.opacity > 0) {
-            fadeTarget.style.opacity = clamp(parseInt(fadeTarget.style.opacity)-0.3, 0);
-        } else {
-            clearInterval(fadeEffect);
-        }
-    }, 200);
-}
-
-const close_msg = document.getElementById('close-msg');
-
-//Opening up the image viewer pop-up window
-const images = document.querySelectorAll('.image');
-const img_viewer = document.querySelector('#img-viewer');
-const popup_win = document.getElementById('gallery-pop-background');
-
-var selected_img_id;
-
-images.forEach(el => {
-    el.addEventListener('click', () =>{
-        //getting the background-image url, cutting the excess characters
-        //and *WITHOUT QUATETION MARKS (' || ")* pass it as the src value
-        //to my image viewer
-        console.log(close_msg.style.opacity);
-        var styles = window.getComputedStyle(el);
-        var background_img = styles.backgroundImage.slice(5, -2);
-        img_viewer.src = background_img;
-
-        selected_img_id = el.getAttribute('id');
-        
-        popup_win.style.display = 'flex';
-        fadeOutEffect();
-    });
-});
-
-var selected = false;   //checks the state of the starting image
-
-//Closing the pop-up image by clicking the "closing"/'x' button
-const close_btn = document.getElementById('close-popup');
-const nav_button_cont = document.querySelector('.next-prev-cont');
-
-close_btn.onclick = closeWindow;
-
-//double-tap close image pop-up window
-window.addEventListener('dblclick', (e) => {
-    if(((e.target == img_viewer || e.target == nav_button_cont) && (e.target !== prev_btn || e.target !== next_btn))){
-        closeWindow();
-    }
-});
-
-
+*/
 function closeWindow(){
     popup_win.style.display = 'none';
     selected = false;   //used for the next-prev buttons
     close_msg.style.opacity = start_opacity;
-}
-
-//Previous and Next buttons functions
-const prev_btn = document.getElementById('prev');
-const next_btn = document.getElementById('next');
-
-var id_num;
-prev_btn.onclick = swapPrev;
-
-next_btn.onclick = swapNext;
-
-//Swap gallery images using arrow keys
-/*Used 'released' so the user doesn't hold right or left arrow keys*/
-var released = true;
-
-window.onkeyup = function(event){
-    released = true;
-}
-
-window.onkeydown = function(event){
-    if (popup_win.style.display == 'flex' && released){
-        released = false;
-        if (event.code == 'ArrowLeft' || event.code == 'KeyA'){
-            swapPrev();
-        }else if (event.code == 'ArrowRight' || event.code == 'KeyD'){
-            swapNext();
-        }else if (event.code == 'Escape'){
-            closeWindow();
-        }
-    }
-}
-
-function swapPrev(){
-    if (!selected){
-        id_num = repeat(parseInt(selected_img_id.slice(4))-1, 1, images.length);
-        selected = true;
-    }else {
-        id_num = repeat(--id_num, 1, images.length);
-    }
-    var img_id = selected_img_id.slice(0, 4)+id_num;
-
-    var el = document.getElementById(img_id);
-    var styles = window.getComputedStyle(el);
-    var background_img = styles.backgroundImage.slice(5, -2);
-    img_viewer.src = background_img;
-}
-
-function swapNext(){
-    if (!selected){
-        id_num = repeat(parseInt(selected_img_id.slice(4))+1, 1, images.length);
-        selected = true;
-    }else {
-        id_num = repeat(++id_num, 1, images.length);
-    }
-    var img_id = selected_img_id.slice(0, 4)+id_num;
-    
-    var el = document.getElementById(img_id);
-    var styles = window.getComputedStyle(el);
-    var background_img = styles.backgroundImage.slice(5, -2);
-    img_viewer.src = background_img;
 }
 
 //Math repeat function ^^
@@ -379,10 +264,23 @@ window.onclick = function(event) {
         
         lang_arrow.style.backgroundImage = dropdown_img;
     }
-    //Closing the pop-up image by clicking out of the pop-up box
-    if (event.target == popup_win) {
-        popup_win.style.display = 'none';
-        selected = false;   //used for the next-prev buttons
-        close_msg.style.opacity = 1;
-    }
 }
+
+/* TAB Management */
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabCont = document.querySelectorAll('[data-tab-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        tabCont.forEach(tabContent => {
+            tabContent.classList.remove('active');
+        });
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        tab.classList.add('active');
+        target.classList.add('active');
+    });
+});
